@@ -7,7 +7,9 @@ body{
 	font-family: "Verdana", "Helverica",sans-serif; 
 	background-color: #1D2475;
 	color:#939396;
-	background-image: url("orangemushroom.jpg");
+}
+body{
+	background-image: url("../lab01/orangemushroom.jpg");
 	background-repeat: no-repeat;
 	background-position: 100% 0%;
 	background-attachment: fixed;
@@ -71,7 +73,8 @@ table, td, th{
 }
 img{
  	border: medium ridge #F7931E;	
- }
- a > img{
+}
+
+a > img{
  	border-style: none;
- }
+}
