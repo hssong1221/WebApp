@@ -1,4 +1,4 @@
-section > *:hover{
+*>*:hover{
 	background-color: #A6CE39;
 }
 body{
@@ -22,6 +22,8 @@ aside{
 }
 
 section > section{
+	border-right:0px;
+	border-top:0px;
 	overflow: hidden;
 }
 article{
