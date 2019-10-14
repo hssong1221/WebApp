@@ -1,0 +1,118 @@
+body{
+	background-image: url(bannerbg.png), url(background.png);
+	background-repeat: repeat-x, repeat;
+	font-family: Verdana, Tahoma, sans-serif;
+	font-size: 8pt; 
+	margin: 0px;
+	padding: 0px;
+}
+#banner{
+	height: 50px;
+	text-align: center;
+}
+h1{
+	font-weight: bold;
+	font-size: 24px;
+	font-family: Tahoma, Verdana, sans-serif;
+	text-shadow: 3px 3px  #999999;
+	text-align: center;
+}
+#allcontent_area{
+	width: 800px;
+	margin-right: auto;
+	margin-left: auto;
+	border: 4px solid gray;
+	border-radius: 20px;
+	overflow: hidden;
+}
+#reviewbox{
+	width:550px;
+}
+#imgbox{
+	width: 250px;
+	float: right;
+	background-color: #A2B964;
+	table-layout: fixed;
+}
+#imgbox dl{
+	margin-top: 0px;
+	padding: 10pt;
+	padding-top: 0px;
+	font-size: 8pt;
+	font-family: Arial, sans-serif;
+}
+#imgbox dt{
+	font-weight: bold;
+	margin-top: 10pt;
+}
+#imgbox ul{
+	list-style: none;
+	padding-left: 0px;
+	margin-top: 0px;	
+}
+#rottenimg{
+	background-image: url(rbg.png);
+	height: 83px;
+	font-size: 48pt;
+	font-weight: bold;
+	color: red;
+}
+#rottenimg img{
+	vertical-align: bottom;
+}
+
+#leftreviewBox{
+	width: 47%;
+	margin: 2%;
+	float: left;
+}
+#rightreviewBox{
+	width: 47%;
+	margin: 2%;
+	overflow: hidden;
+}
+.review{
+	font-size: 8pt;
+	padding: 8px;
+	margin: 2%;
+}
+.content{
+	border: 2px solid gray;
+	border-radius: 10px;
+	font-weight: bold;
+	background-color: #E8DC9B;
+	overflow: hidden;
+}
+.content img{
+	vertical-align: top;
+	margin-right: 5px;
+	float: left;
+}
+.name{
+	margin-bottom: 20px;
+}
+.name img{
+	vertical-align: top;
+	margin-right: 5px;
+	float: left;
+}
+.affiliation{
+	font-style: italic;
+}
+
+#bottombox{
+	background-color: #A2B964;
+	text-align: center;
+	padding: 5px;
+	clear: both;
+}
+#bottombox p{
+	margin: 0px;
+}
+
+#validator{
+	position: fixed;
+	bottom: 0;
+	right: 0;
+	opacity: 0.5;
+}
