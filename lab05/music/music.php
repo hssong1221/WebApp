@@ -102,9 +102,22 @@
 
 			<ul id="musiclist">
 				<?php
-				for ($i=0; $i < count($music); $i++) { ?>
+				$musicsize = array();
+				$musicname = array();
+				for ($j=0; $j < count($music) ; $j++)
+				{ 
+					$musicsize[] = filesize($music[$j]);
+					$musicname[] = $music[$j];
+				}
+				sort($musicsize);
+				$musicsize = array_reverse($musicsize);
+				sort($musicname);
+				$musicname = array_reverse($musicname);
+				for ($i=0; $i < count($musicsize); $i++)
+				{ 
+					?>
 					<li class="mp3item">
-						<a href="lab5/musicPHP/songs/<?= basename($music[$i])?>"><?= basename($music[$i]) . " (" . (int) (filesize($music[$i])/1024) . " KB)"
+						<a href="lab5/musicPHP/songs/<?= basename($musicname[$i])?>"><?= basename($musicname[$i]) . " (" . (int) ($musicsize[$i]/1024) . " KB)"
 						?></a>
 					</li>
 				<?php
@@ -118,7 +131,7 @@
 						<ul>
 							<?php
 							$line = file($musiclist2[$i]);
-							
+							shuffle($line);
 							for ($k = 0; $k < count($line); $k++) {
 								$pos = strpos($line[$k], "#");
 								if($pos === false)
