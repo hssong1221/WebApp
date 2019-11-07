@@ -35,15 +35,14 @@
 		# Ex 5 : 
 		# Check if the credit card number is composed of exactly 16 digits.
 		# Check if the Visa card starts with 4 and MasterCard starts with 5. 
-		} elseif (!preg_match("/^[0-9]{16}$/", $_POST['cardnum'])) {
-			
+		} elseif ((!preg_match("/^4[0-9]{15}$/", $_POST['cardnum']) and $_POST['cc'] == 'visa') or (!preg_match("/^5[0-9]{15}$/", $_POST['cardnum']) and $_POST['cc'] == 'mastercard') ) {
+
 		?>
 
 		<!-- Ex 5 : 
 			Display the below error message : -->
 		<h1>Sorry</h1>
 		<p>You didn't provide a valid credit card number. <a href="gradestore.html">Try again?</a></p>
-
 		<?php
 		# if all the validation and check are passed 
 		#} 
