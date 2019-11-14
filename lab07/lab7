@@ -1,0 +1,14 @@
+EX4
+1. select * from student where major = 'Computer Science';
+2. select student_id, year, major from student;
+3. select * from student where year = 3;
+4. select * from student where year = 1 or year = 2;
+5. select student_id, name, year, student.dept_no,major 
+	from student join department on student.dept_no = department.dept_no 
+	where student.dept_no = 4;
+
+EX5
+1. select * from student where student_id like '%2007%';
+2. select * from student order by student_id;
+3. select major, avg(year) from student group by major having avg(year) > 3;
+4. select * from student where student_id like '%2007%' limit 2;
